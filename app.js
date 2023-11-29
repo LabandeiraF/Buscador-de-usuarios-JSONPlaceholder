@@ -37,10 +37,10 @@ function Resultado(usuarios) {
         tarjeta.classList.add('card', 'mb-3');
         tarjeta.innerHTML = `
             <div class="card">
-                <h5 class="card-title">${usuario.name}</h5>
-                <p class="card-text">Email: ${usuario.email}</p>
-                <p class="card-text">Dirección: ${usuario.address.city}, ${usuario.address.street}</p>
-                <p class="card-text">Teléfono: ${usuario.phone}</p>
+                <p>${usuario.name}</p>
+                <p>Email: ${usuario.email}</p>
+                <p>Dirección: ${usuario.address.city}, ${usuario.address.street}</p>
+                <p>Teléfono: ${usuario.phone}</p>
             </div>
         `;
         usuario.appendChild(tarjeta);
