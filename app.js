@@ -12,7 +12,7 @@ btnBuscador.addEventListener('click', async function () {
     }
 
     try {
-        const response = await fetch(`https://jsonplaceholder.typicode.com/users?name=${nombreUsuario}`);
+        const response = await fetch(`https://jsonplaceholder.org/users?name=${nombreUsuario}`);
         if (!response.ok) {
             console.error('informacion no encontrada');
         }
@@ -47,16 +47,3 @@ function Resultado(usuarios) {
     });
 }
 
-fetch('https://jsonplaceholder.typicode.com/users', {
-  method: 'POST',
-  body: JSON.stringify({
-    title: 'juan',
-    body: 'bar',
-    userId: 1,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
